@@ -6,12 +6,13 @@ body {
   font-family: monospace;
   max-width: 600px;
   margin: 8px auto;
+  position: relative;
 }
 
 .log-output {
   padding 4px;
   min-height: 400px;
-  max-height: 60vh;
+  max-height: 90vh;
   overflow-y: scroll;
   margin: 8px;
   border: 1px solid #DDD;
