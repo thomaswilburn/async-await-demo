@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  max-width: 600px;
+  margin: 8px auto;
+}
+
+.log-output {
+  padding 4px;
+  min-height: 400px;
+  max-height: 60vh;
+  overflow-y: scroll;
+  margin: 8px;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+}
+
+.log-output .line {
+  border-bottom: 1px dotted #EEE;
+  white-space: pre;
+}
+
+.log-output .object { color: #833; }
+.log-output .string { color: #383; }
+.log-output .number { color: #338; }
