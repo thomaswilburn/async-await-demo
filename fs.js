@@ -10,10 +10,10 @@ install.patch(async function() {
     });
   };
 
-  var readFilePromise = function() {
-    return waitPromise(Math.random() * 300 + 1000).then(function() {
-      return fileContents;
-    });
+  var readFilePromise = async function() {
+    await waitPromise(Math.random() * 300 + 1000);
+    // if (Math.random() > .8) throw new Error(Date.now());
+    return fileContents;
   };
 
   return { readFileCallback, readFilePromise };
